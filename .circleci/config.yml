@@ -17,4 +17,6 @@ workflows:
       - hello-job:
           context:
             - ankap
-
+          filters:
+            branches:
+              only: ankap
