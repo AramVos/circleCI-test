@@ -9,7 +9,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout # check out the code in the project directory
-      - run: echo $SHAT_ANKAP; echo $HOME; echo "gfhgvh" # run the `echo` command
+      - run: echo $SHAT_ANKAP > aa; cat aa # run the `echo` command
 
 workflows:
   my-workflow:
