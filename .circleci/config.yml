@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 
 jobs:
   hello-job:
@@ -12,6 +12,7 @@ jobs:
       - run: echo $SHAT_ANKAP > aa; cat aa # run the `echo` command
 
 workflows:
+  version: 2
   my-workflow:
     jobs:
       - hello-job:
